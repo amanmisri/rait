@@ -9,7 +9,6 @@
     "type": "project",
     "require": {
         "php": ">=7.0.0",
-        "algolia/algoliasearch-client-php": "^1.25",
         "braintree/braintree_php": "^3.36",
         "cartalyst/stripe-laravel": "^10.0",
         "fideloper/proxy": "~4.0",
