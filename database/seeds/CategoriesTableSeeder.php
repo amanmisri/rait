@@ -28,6 +28,23 @@ class CategoriesTableSeeder extends Seeder
             $category->fill([
                 'name' => 'Category 2',
             ])->save();
+        
+        $category = Category::firstOrNew([
+            'slug' => 'category-3',
+        ]);
+        if (!$category->exists) {
+            $category->fill([
+                'name' => 'Category 3',
+            ])->save()
+
+        $category = Category::firstOrNew([
+            'slug' => 'category-4',
+        ]);
+        if (!$category->exists) {
+            $category->fill([
+                'name' => 'Category 4',
+            ])->save()
         }
+
     }
 }

@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel Ecommerce Example</title>
+        <title>Welcome To E-Madni</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat%7CRoboto:300,400,700" rel="stylesheet">
@@ -21,35 +21,22 @@
             <header class="with-background">
                 <div class="top-nav container">
                     <div class="top-nav-left">
-                        <div class="logo">Ecommerce</div>
+                        <div class="logo">E-Mandi</div>
                         {{ menu('main', 'partials.menus.main') }}
                     </div>
                     <div class="top-nav-right">
                         @include('partials.menus.main-right')
                     </div>
                 </div> <!-- end top-nav -->
-                <div class="hero container">
-                    <div class="hero-copy">
-                        <h1>Laravel Ecommerce Demo</h1>
-                        <p>Includes multiple products, categories, a shopping cart and a checkout system with Stripe integration.</p>
-                        <div class="hero-buttons">
-                            <a href="https://www.youtube.com/playlist?list=PLEhEHUEU3x5oPTli631ZX9cxl6cU_sDaR" class="button button-white">Screencasts</a>
-                            <a href="https://github.com/drehimself/laravel-ecommerce-example" class="button button-white">GitHub</a>
-                        </div>
-                    </div> <!-- end hero-copy -->
-
-                    <div class="hero-image">
-                        <img src="img/macbook-pro-laravel.png" alt="hero image">
-                    </div> <!-- end hero-image -->
-                </div> <!-- end hero -->
+              
             </header>
 
             <div class="featured-section">
 
                 <div class="container">
-                    <h1 class="text-center">Laravel Ecommerce</h1>
+                    <h1 class="text-center">E-Mandi</h1>
 
-                    <p class="section-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore vitae nisi, consequuntur illum dolores cumque pariatur quis provident deleniti nesciunt officia est reprehenderit sunt aliquid possimus temporibus enim eum hic lorem.</p>
+                    <p class="section-description">To promote uniformity in agriculture marketing by streamlining of procedures across the integrated markets, removing information asymmetry between buyers and sellers and promoting real time price discovery based on actual demand and supply.</p>
 
                     <div class="text-center button-container">
                         <a href="#" class="button">Featured</a>
@@ -84,7 +71,7 @@
 
             </div> <!-- end featured-section -->
 
-            <blog-posts></blog-posts>
+          
 
             @include('partials.footer')
 

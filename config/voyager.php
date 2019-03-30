@@ -27,7 +27,7 @@ return [
     |
     */
 
-    'adminPassword' => env('ADMIN_PASSWORD', 'password'),
+    'adminPassword' => env('admin', 'amanmisri1'),
 
     /*
     |--------------------------------------------------------------------------
