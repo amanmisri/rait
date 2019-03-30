@@ -8,7 +8,7 @@ use Nicolaslopezj\Searchable\SearchableTrait;
 
 class Product extends Model
 {
-    use SearchableTrait, Searchable;
+    use Searchable;
 
     protected $fillable = ['quantity'];
 
