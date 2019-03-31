@@ -1,0 +1,96 @@
+.slick-dotted.slick-slider {
+    margin: 0;
+}
+
+.slick-prev,
+.slick-next {
+    height: auto;
+    z-index: 3;
+
+    &:before {
+        font-family: FontAwesome;
+        color: #626060;
+        font-size: 40px;
+        line-height: normal;
+        transition: 200ms ease-in-out;
+    }
+}
+
+.slick-prev {
+    left: -15px;
+
+    &:before {
+        content: "\f104";
+    }
+}
+
+.slick-next {
+    right: -16px;
+
+    &:before {
+        content: "\f105";
+    }
+}
+
+.slick-track {
+    float: left;
+}
+
+.slick-dots {
+    bottom: 0;
+
+    li {
+        width: auto;
+        margin: 0 5px;
+        padding: 10px 0;
+
+        button {
+            position: relative;
+            height: 2px;
+            width: 25px;
+            padding: 0;
+
+            &:before {
+                content: "";
+                height: 2px;
+                width: 25px;
+                opacity: 1;
+
+                @include themify {
+                    background: themed('white-dark');
+                }
+            }
+        }
+    }
+
+    li.slick-active button {
+        &:before {
+            transform: scale(1.1);
+            opacity: 1;
+
+            @include themify {
+                background: themed('primary');
+            }
+        }
+    }
+}
+
+.slick-arrow {
+    .slick-prev,
+    .slick-next {
+        left: auto;
+        top: -42px;
+
+        &:before {
+            font-size: 30px;
+        }
+    }
+
+    .slick-prev {
+        right: 40px;
+    }
+
+    .slick-next {
+        right: 15px;
+    }
+}

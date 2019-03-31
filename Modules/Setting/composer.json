@@ -1,0 +1,27 @@
+{
+    "name": "fleetcart/setting",
+    "description": "The E-mandi Setting Module.",
+    "authors": [
+        {
+            "name": "Pragalbha Patil",
+            "email": "pragalbha77@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Setting\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}
