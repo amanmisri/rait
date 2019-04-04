@@ -1,0 +1,10 @@
+{
+    "name": "Shipping",
+    "alias": "shipping",
+    "description": "The E-mandi Shipping Module.",
+    "active": 1,
+    "order": 100,
+    "providers": [
+        "Modules\\Shipping\\Providers\\ShippingServiceProvider"
+    ]
+}

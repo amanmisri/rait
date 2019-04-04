@@ -1,0 +1,24 @@
+<?php
+
+namespace Modules\Support\Traits;
+
+use Modules\Core\Events\CollectingAssets;
+
+trait AddsAsset
+{
+    /**
+     * Add given assets to the given routes response.
+     *
+     * @param array|string $routes
+     * @param array $assets
+     * @return void
+     */
+    public function addAssets($routes, array $assets)
+    {
+        $this->app['events']->listen(CollectingAssets::class, function (CollectingAssets $event) use ($routes, $assets) {
+            if ($event->onRoutes(array_wrap($routes))) {
+                $event->requireAssets($assets);
+            }
+        });
+    }
+}

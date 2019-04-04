@@ -1,0 +1,31 @@
+@import '~jstree/dist/themes/default/style';
+
+.category-tree {
+    margin-left: -10px;
+}
+
+.add-root-category {
+    display: table;
+    border: 1px solid #dddddd;
+}
+
+.add-sub-category {
+    display: table;
+    margin: 5px 0 10px;
+    border: 1px solid #dddddd;
+}
+
+#category-form .loading-spinner {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.category-details-tab {
+    margin: 0 -15px 0 15px;
+}
+
+@media screen and (max-width: 991px) {
+    .category-details-tab {
+        margin: 30px 0 0 -15px;
+    }
+}
