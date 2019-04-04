@@ -10,9 +10,9 @@ return [
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
     */
-    'name' => 'E-mandi',
+    'name' => 'FleetCart',
 
-    'installed' => env('APP_INSTALLED', true),
+    'installed' => env('APP_INSTALLED', false),
 
     'editor' => env('APP_EDITOR', 'vscode'),
 
@@ -36,7 +36,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'debug'),
+    'env' => env('APP_ENV', 'production'),
 
     /*
     |--------------------------------------------------------------------------
@@ -49,7 +49,7 @@ return [
     |
     */
 
-    'debug' => env('APP_DEBUG', true),
+    'debug' => env('APP_DEBUG', false),
 
     /*
     |--------------------------------------------------------------------------
