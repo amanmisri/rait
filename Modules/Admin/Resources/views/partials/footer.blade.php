@@ -20,7 +20,7 @@
 
 <footer class="main-footer hide">
     <div class="pull-right hidden-xs">
-        <span>v{{ fleetcart_version() }}</span>
+        <span>{{-- fleetcart_version() --}}</span>
     </div>
 
     <a href="#" data-toggle="modal" data-target="#keyboard-shortcuts-modal">
@@ -28,4 +28,18 @@
     </a>&nbsp;
 
     <span>Copyright &copy; {{ date('Y')}} <a href="#" target="_blank">E-mandi</a></span>
+    <div id="google_translate_element"></div>
+    <style>
+        #google_translate_element{
+            position: relative;
+            float: right;
+        }
+    </style>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
 </footer>

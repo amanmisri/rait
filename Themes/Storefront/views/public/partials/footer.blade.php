@@ -75,6 +75,15 @@
                     @endif
                 </div>
             </div>
+            <div id="google_translate_element"></div>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
         </div>
 
         @if ($socialLinks->isNotEmpty())
@@ -87,9 +96,8 @@
                     @endforeach
                 </ul>
             </div>
-        @endif
+        @endif 
     </div>
-
     <div class="footer-bottom bg-black-dark p-tb-20 clearfix">
         <div class="container">
             <div class="copyright text-center">
