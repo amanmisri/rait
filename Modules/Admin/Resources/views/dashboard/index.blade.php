@@ -7,6 +7,11 @@
 @endsection
 
 @section('content')
+<head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/core.js"></script>
+
+</head>
     <div class="grid clearfix">
         <div class="row">
             @hasAccess('admin.orders.index')
@@ -23,7 +28,9 @@
             @endHasAccess
         </div>
     </div>
-
+    <div class="row">
+        <div id="result" style="color:white;"></div>
+    </div>
     <div class="row">
         <div class="col-md-7">
             @hasAccess('admin.orders.index')
@@ -43,4 +50,16 @@
             @endHasAccess
         </div>
     </div>
+    <script>
+            $(document).ready(function(){
+               $.ajax({
+                        url: "http://api.apixu.com/v1/forecast.json?key=1619860b44ed42d7a1613646190504&q=Maharashtra&days=7",
+                        type: 'GET',
+                        dataType: 'json',
+                        success: function(res) {
+                           $('#result').html(res)
+                        }
+                    });
+            });        
+    </script>
 @endsection

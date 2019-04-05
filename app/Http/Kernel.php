@@ -21,6 +21,7 @@ class Kernel extends HttpKernel
         \FleetCart\Http\Middleware\TrustProxies::class,
         \FleetCart\Http\Middleware\RunUpdater::class,
         \FleetCart\Http\Middleware\RedirectToInstallationIfNotInstalled::class,
+        \Barryvdh\Cors\HandleCors::class,
     ];
 
     /**
@@ -53,5 +54,6 @@ class Kernel extends HttpKernel
     protected $routeMiddleware = [
         'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'cors' => \Barryvdh\Cors\HandleCors::class, // add this line to enable cors to your routes
     ];
 }

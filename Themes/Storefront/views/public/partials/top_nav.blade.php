@@ -32,7 +32,7 @@
             <div class="top-nav-right pull-right">
                 <ul class="list-inline">
                     <li><a href="{{ route('compare.index') }}">{{ trans('storefront::layout.compare') }} ({{ $compareCount }})</a></li>
-                <li><a href="{{url('/admin')}}">Farmer login</a></li>
+                    <li style="color:#0051CA;"> {{!! Auth::check() ? '' : '<a href="'.url('/admin').'">Farmer login</a>' !!}}</li>
                     @auth
                         <li><a href="{{ route('account.wishlist.index') }}">{{ trans('storefront::account.links.my_wishlist') }}</a></li>
                         <li><a href="{{ route('account.dashboard.index') }}">{{ trans('storefront::account.links.my_account') }}</a></li>
